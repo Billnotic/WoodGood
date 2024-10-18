@@ -1,5 +1,6 @@
 package net.mehvahdjukaar.every_compat.forge;
 
+import moonfather.tetra_tables.blocks.TetraTable;
 import net.mehvahdjukaar.every_compat.ECNetworking;
 import net.mehvahdjukaar.every_compat.EveryCompat;
 import net.mehvahdjukaar.every_compat.EveryCompatClient;
@@ -48,6 +49,7 @@ import net.mehvahdjukaar.every_compat.modules.forge.woodster.WoodsterModule;
 import net.mehvahdjukaar.every_compat.modules.forge.workshop.WorkshopForHandsomeAdventurerModule;
 import net.mehvahdjukaar.every_compat.modules.forge.xerca.XercaModule;
 import net.mehvahdjukaar.every_compat.modules.stylish_stiles.StylishStilesModule;
+import net.mehvahdjukaar.every_compat.modules.forge.tetra_tables.TetraTablesModule;
 
 import net.mehvahdjukaar.moonlight.api.platform.PlatHelper;
 import net.mehvahdjukaar.moonlight.api.platform.network.forge.ChannelHandlerImpl;
@@ -124,6 +126,7 @@ public class EveryCompatForge extends EveryCompat {
             addModule("dramaticdoors", () -> DramaticDoorsMacawModule::new);
         }
         addModule("lolmct", () -> MoreCraftingTablesModule::new);
+        addModule("tetra_tables", () -> TetraTablesModule::new);
 
         // ========================================= Macaw's ======================================================== \\
         addModule("mcwbridges", () -> MacawBridgesModule::new);
