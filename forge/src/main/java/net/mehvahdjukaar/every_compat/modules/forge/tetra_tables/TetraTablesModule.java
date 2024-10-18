@@ -14,20 +14,19 @@ import net.minecraft.world.level.block.Block;
 
 import static moonfather.tetra_tables.initialization.Registration.TETRA_TABLE_BE;
 
-public class TetraTablesModule extends SimpleModule{
-
+public class TetraTablesModule extends SimpleModule
+{
     public final SimpleEntrySet<WoodType, Block> tetra_table;
 
-    public TetraTablesModule(String modId) {
-        super(modId, "ttln"); // <- add an shortened ID for the name of mod
-
-        tetra_table = SimpleEntrySet.builder(WoodType.class, "", "tetra_table", // Need to have ID of the blockTYPE
+    public TetraTablesModule(String modId)
+    {
+        super(modId, "ttln");
+        tetra_table = SimpleEntrySet.builder(WoodType.class, "", "tetra_table",
                         getModBlock("tetra_table_oak"),
-                        () -> WoodTypeRegistry.OAK_TYPE, // "blankBlock" need to be the full ID of the block like "oak_chair"
-                        w -> new TetraTable(Utils.copyPropertySafe(w.planks))
+                        () -> WoodTypeRegistry.OAK_TYPE,
+                        w -> new TetraTable()
                 )
-                // Add .addTexture() or .addTextureM() <- one for image and one for mask texture
-                .setTabKey(modRes("default"))// must be included
+                .setTabKey(modRes("default"))
                 .addTile(getModTile("tetra_table_be"))
                 .addTexture(modRes("block/oak_crafting_table_top"))
                 .addTexture(modRes("block/oak_crafting_table_side"))
@@ -35,7 +34,5 @@ public class TetraTablesModule extends SimpleModule{
                 .defaultRecipe()
                 .build();
         this.addEntry(tetra_table);
-
-
     }
 }

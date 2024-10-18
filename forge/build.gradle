@@ -229,7 +229,6 @@ dependencies {
     modCompileOnly("curse.maven:regions-unexplored-659110:5151869")
     //This is the version of tetra-tables-looking-neat that doesn't have the handsome BlockState nor specific everycompat checks.
     modCompileOnly("curse.maven:tetra-tables-looking-neat-forge-954341:5225383")
-    //modImplementation("myForkedMod:tetra_tables--mc1.20--1.1.1")
     //modImplementation("curse.maven:tetra-289712:4857842")
     //modImplementation("curse.maven:mutil-351914:4824501")
 
@@ -254,6 +253,7 @@ dependencies {
 //    modRuntimeOnly("curse.maven:alexs-caves-924854:5162617") // Citadel
 //    modImplementation("curse.maven:tetra-289712:4857842") // Tetra
 //    modImplementation("curse.maven:mutil-351914:4824501") // Tetra Dependecy
+//    modImplementation("myForkedMod:tetra_tables--mc1.20--1.1.1")
 
 //    modRuntimeOnly("curse.maven:terrafirmacraft-302973:4862659") // patchouli
 
