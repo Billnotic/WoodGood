@@ -251,7 +251,9 @@ dependencies {
 //    modRuntimeOnly("curse.maven:upgrade-aquatic-326895:5296565") // Blueprint
 //    modRuntimeOnly("curse.maven:autumnity-365045:5292346") // Blueprint
 //    modRuntimeOnly("curse.maven:the-outer-end-430404:5043937") // Blueprint
-//    modRuntimeOnly("curse.maven:alexs-caves-924854:5162617") // citadel
+//    modRuntimeOnly("curse.maven:alexs-caves-924854:5162617") // Citadel
+//    modImplementation("curse.maven:tetra-289712:4857842") // Tetra
+//    modImplementation("curse.maven:mutil-351914:4824501") // Tetra Dependecy
 
 //    modRuntimeOnly("curse.maven:terrafirmacraft-302973:4862659") // patchouli
 
